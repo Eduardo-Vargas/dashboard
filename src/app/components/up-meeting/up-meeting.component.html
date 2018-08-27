@@ -1,0 +1,83 @@
+<mat-card>
+  <mat-form-field>
+    <input matInput [matDatepicker]="picker1" placeholder="Choose a date" [formControl]="date">
+    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+    <mat-datepicker #picker1></mat-datepicker>
+  </mat-form-field>
+
+  <mat-accordion class="example-headers-align">
+    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          9 : 30
+        </mat-panel-title>
+        <mat-panel-description>
+          Meeting with manager
+          <mat-icon>date_range</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <mat-card-content>
+        Location: SF 8 <br /> Addendees: Ed
+      </mat-card-content>
+      <mat-form-field>
+        <input matInput placeholder="Add memo">
+      </mat-form-field>
+
+      <mat-action-row>
+        <button mat-button color="primary" (click)="nextStep()">Next</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          10 : 00
+        </mat-panel-title>
+        <mat-panel-description>
+          Lunch
+          <mat-icon>date_range</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <mat-card-content>
+        Location: GA <br /> Addendees: Eduardo
+      </mat-card-content>
+      <mat-form-field>
+        <input matInput placeholder="Add memo">
+      </mat-form-field>
+
+      <mat-action-row>
+        <button mat-button color="warn" (click)="prevStep()">Previous</button>
+        <button mat-button color="primary" (click)="nextStep()">Next</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          13 : 15
+        </mat-panel-title>
+        <mat-panel-description>
+          Code Review
+          <mat-icon>date_range</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <mat-card-content>
+        Location: TBD <br /> Addendees: QA Team
+      </mat-card-content>
+
+      <mat-form-field>
+        <input matInput placeholder="Add memo">
+      </mat-form-field>
+
+      <mat-action-row>
+        <button mat-button color="warn" (click)="prevStep()">Previous</button>
+        <button mat-button color="primary" (click)="nextStep()">End</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+
+  </mat-accordion>
+
+
+</mat-card>

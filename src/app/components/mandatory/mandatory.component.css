@@ -1,0 +1,19 @@
+.mandatory-card {
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+  background:linear-gradient(0deg,rgba(94, 87, 91, 0.3),rgba(94, 87, 91, 0.3)),url("http://eduardovargas.engineer/assets/images/backgroundsf-2000x1500.jpg");
+  background-size: cover;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Lato;
+    font-size: 4vh;
+}

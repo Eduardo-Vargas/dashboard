@@ -1,0 +1,16 @@
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:400,700|Material+Icons');
+
+.example-headers-align .mat-expansion-panel-header-title, 
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+mat-card{
+  height: 100%;
+  overflow: scroll;
+}

@@ -1,0 +1,15 @@
+@import '~@angular/material/theming';
+
+.widget-grid {
+  height: calc(100vh - 64px);
+  width: 100%;
+}
+
+gridster {
+    background-color: #E0E0E0;
+}
+
+gridster-item {
+    border-radius: 10px;
+    @include mat-elevation(5);
+}

@@ -1,0 +1,55 @@
+.weather-card {
+  padding: 24px;
+  padding-top:10px;
+}
+
+.mat-card-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-family: Lato;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-family: Lato;
+}
+
+.weather-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.location {
+  font-size: 1.6em;
+  margin: 8px;
+}
+
+.current-temperature {
+  font-size: 4em;
+  margin: 0px;
+}
+
+.hi-low {
+  font-size: 1.25em;
+  margin: 0px;
+}
+
+.weather-icon {
+  color: #FFEB3B;   /* E0E0E0 */
+  font-size: 6em;
+  height: fit-content;
+  width: fit-content;
+}

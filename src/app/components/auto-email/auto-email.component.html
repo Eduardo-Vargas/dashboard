@@ -1,0 +1,32 @@
+<mat-card>
+    <form class="example-form" [formGroup]="formGroup" (ngSubmit)="onFormSubmit()" ngNativeValidate>
+      <div>
+          <mat-slide-toggle formControlName="enableEmail" [(ngModel)]="isChecked" (change)="onChange($event)">{{enableDis}}</mat-slide-toggle>
+      </div>   
+    <mat-form-field>
+        <input matInput [matDatepicker]="picker1" placeholder="Choose a start date" value="{{startDate}}">
+        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker #picker1></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput [matDatepicker]="picker2" placeholder="Choose a end date">
+        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field>
+     
+    
+ 
+
+      <mat-form-field class="example-full-width">
+        <textarea matInput #message maxlength="1024" placeholder="Automatic Reply Email"></textarea>
+        <mat-hint align="start"><strong>Please input the automatic reply message</strong> </mat-hint>
+        <mat-hint align="end">{{message.value.length}} / 1024</mat-hint>
+      </mat-form-field>
+      
+      <div>   
+          <button mat-raised-button color="primary">Save Settings</button>
+      </div> 
+      
+    </form>    
+</mat-card>
+
